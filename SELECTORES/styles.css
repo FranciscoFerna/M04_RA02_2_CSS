@@ -1,0 +1,49 @@
+/* 
+@author: Francisco Fernández Navarro
+#date: 25 d'octubre de 2024 
+*/
+
+/* Selector descendente */
+p span {
+  color: red;
+}
+/* Los elementos <span> que se encuentran dentro de un elemento <p> se muestran de color rojo. */
+
+h1 span {
+  color: blue;
+}
+/* Los elementos <span> que se encuentran dentro de un elemento <h1> se muestran de color azul. */
+
+/* p, a, span, em { 
+  text-decoration: underline; 
+}
+El estilo se aplica a todos los elementos "p", "a", "span" y "em" */
+
+
+/* p a span em { 
+  text-decoration: underline; 
+}
+El estilo se aplica sólo a los elementos "em" que se encuentran dentro de "p a span" */
+
+
+/* Si se emplea el selector descendente, hace referencia a cualquier punto de la descendencia (hijo, nieto, bisnieto…). */
+p a {
+  color: red;
+}
+
+/* Sin embargo, al usar el selector universal, a partir del “nieto” (segundo nivel de descendencia)  saldrá en rojo.*/
+p * a {
+  color: red;
+}
+
+/* Selector de descendente directo (hijo, nieto) */
+
+p > a {
+  color: red;
+}
+
+
+p > * > a {
+  color: red;
+}
+
