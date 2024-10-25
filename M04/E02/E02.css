@@ -2,11 +2,62 @@ h1 {
   color: red;
 }
 
+h2 {
+  text-decoration: underline;
+}
+
 p {
   font-style: italic;
 }
-
-p  span {
-  color: red;
+.franky {
+  background: green;
+  color: white;
 }
 
+.avi {
+  background: #00ffff;
+}
+
+.tony {
+  background: #ae3d1b;
+  color: #86f429;
+}
+
+.boris {
+  background: #82ff2a;
+  color: #af6020;
+}
+
+ol {
+  list-style: upper-roman;
+}
+
+ol .benicio {
+  background: #006a03;
+  color: grey;
+}
+
+ol .denis {
+  background: #00FFFF;
+  color: blue;
+}
+
+ol .vinnie {
+  background: red;
+  color: #87EE29;
+}
+
+ol .rade {
+  background: #82FF2A;
+  color: #AF481E;
+}
+
+ul {
+  list-style: upper-roman;
+}
+
+li a {
+  color: green;
+  text-decoration: none;
+  text-transform: uppercase;
+}
