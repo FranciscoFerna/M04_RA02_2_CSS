@@ -30,8 +30,8 @@ Cada carpeta contiene archivos `.html` y `.css` con ejemplos específicos. Los e
 ## 💻 Cómo Clonar y Usar este Repositorio
 Para clonar este repositorio y ver el contenido en tu ordenador:
 ```bash
-git clone https://github.com/FranFernandezNavarro/css-learning.git
-cd css-learning
+git clone https://github.com/FranciscoFerna/M04_RA02_2_CSS.git
+cd M04_RA02_2_CSS
 ```
 
 Luego, puedes abrir los archivos `.html` en tu navegador para ver los efectos de CSS en tiempo real.
