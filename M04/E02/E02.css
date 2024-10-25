@@ -1,0 +1,12 @@
+h1 {
+  color: red;
+}
+
+p {
+  font-style: italic;
+}
+
+p  span {
+  color: red;
+}
+
