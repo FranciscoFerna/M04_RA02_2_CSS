@@ -6,6 +6,22 @@ h2 {
   text-decoration: underline;
 }
 
+h2:first-of-type {
+  color: #ADADAD;
+}
+
+h2:nth-of-type(2) {
+  color: #8E8E8E;
+}
+
+h2:nth-of-type(3) {
+  color: #666666;
+}
+
+h2:nth-of-type(4) {
+  color: #333333;
+}
+
 p {
   font-style: italic;
 }
@@ -38,18 +54,18 @@ ol .benicio {
 }
 
 ol .denis {
-  background: #00FFFF;
+  background: #00ffff;
   color: blue;
 }
 
 ol .vinnie {
   background: red;
-  color: #87EE29;
+  color: #87ee29;
 }
 
 ol .rade {
-  background: #82FF2A;
-  color: #AF481E;
+  background: #82ff2a;
+  color: #af481e;
 }
 
 ul {
