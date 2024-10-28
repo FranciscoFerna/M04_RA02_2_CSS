@@ -1,0 +1,21 @@
+/* Las pseudo clases hacen referencia al estado de un elemento mientras que los pseudo-elementos hacen referencia a una parte del elemento.
+*/
+
+button {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+
+}
+button:hover {
+  color: red;
+}
+
+button:link {
+  color: green;
+}
+
+button:focus {
+  height: 50px;
+}
