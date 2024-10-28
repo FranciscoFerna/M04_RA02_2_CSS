@@ -1,0 +1,62 @@
+<!-- https://www.w3schools.com/cssref/css_pxtoemconversion.asp -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Unidades de Medida</title>
+</head>
+
+<body>
+    <!-- RELATIVAS -->
+    <!-- Son las que tenemos que usar siempre que desarollemos -->
+    <h1>¡Hello World!</h1>
+    <h2>¡Hello World! (Pero con em)</h2>
+    <h3>¡Hello World! (Pero con rem)</h3>
+
+    <!-- ABSOLUTAS -->
+    <!-- Son medidas que pueden ser específicas de zonas concretas del mundo, y es bueno conocerlas.
+
+    Será el navegador el que haga los cálculos para ocupar en pixeles el tamaño especificado.
+
+    - in (inche o pulgadas): 1in = 2.54cm
+    - cm: centímetros
+    - mm: milímetros
+    - pt (puntos):1pt = 0.35mm, suele usarse para       impresión.
+    - pc (picas): 1pc = 12pt = 4.23mm
+    -->
+    <p class="pulgadas">En Pulgadas</p>
+    <p class="centimetros">En Centimetros</p>
+    <p class="milimetros">En Milímetros</p>
+    <p class="pt">En Pt</p>
+    <p class="pc">En Pc</p>
+
+    <!-- Tamaño: width y heigth -->
+    <!--  
+    width = 100px → Fijamos el tamaño a un determinado número de píxeles.
+    width = 50% → indicamos que porcentaje es el que debe ocupar el elemento, respecto al padre, elemento que lo contiene directamente.
+    min_width = 250px → Fijamos un tamaño mínimo.
+    max_width = 400px → Fijamos un tamaño máximo. 
+    Lo mismo para el heigth.
+
+    Si fijamos algún tamaño, solemos fijar uno de los dos tamaños y el otro indicamos un porcentaje.
+    -->
+
+    <div class="tamaño">
+    </div>
+
+    <!-- PORTENCUALES -->
+    <!-- Son medidas relativas, que nos va bien para hacer nuestra web responsive.
+
+    Poner un porcentaje % querrá decir que ocupara ese porcentaje, pero del padre, del elemento directamente anterior. -->
+
+    <div class="container">
+        <div class="percent">
+        </div>
+    </div>
+
+</body>
+
+</html>

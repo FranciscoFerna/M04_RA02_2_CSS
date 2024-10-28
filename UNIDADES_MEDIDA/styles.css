@@ -1,0 +1,68 @@
+* {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    /* Es una medida relativa puesto que se ira adapatando a la pantalla y su resolucion */
+}
+
+h2 {
+    font-size: 1em;
+    /* Toma el tamaño de los que le viene por herencia y en base a eso coge la anchura de la M, que será la medida que tome como referencia. Escalamos y mantenemos una proporcionalidad entre los elementos
+        Body = 1em (16px)
+        Hijo = 1.3em (16px x 1.3 = 20.8px)
+        Nieto = 1.3em (20.8px x 1.3 = 27.04px)
+     */
+}
+
+h3 {
+    font-size: 1.4rem;
+    /* No funciona por herencia, se basa en la fuente definida en el root <html>,  base a eso coge la anchura de la M, y escalamos siempre respecto a una base.
+        Root (definido en el html, normalmente 16px) = 1rem (16px)
+        Hijo = 1.3rem (16px x 1.3 = 20.8px)
+        Nieto = 1.3rem (16px x 1.3 = 20.8px)
+     */
+}
+
+.pulgadas {
+    font-size: 0.5in;
+}
+
+.centimetros {
+    font-size: 1.5cm;
+}
+
+.milimetros {
+    font-size: 20mm;
+}
+
+.pt {
+    font-size: 70pt;
+}
+
+.pc {
+    font-size: 7pc;
+}
+
+.tamaño {
+    width: 150px;
+    /* Lo fijamos a un tamaño determinado */
+    height: 150px;
+    min-width: 250px; /* Establecemos un ancho minimo */
+    min-height: 100px;
+    background-color: yellow;
+}
+
+.container {
+    width: 500px;
+    height: 200px;
+    background-color: blue;
+}
+
+.percent {
+    /* Es el portcentaje que ocupara respecto al padre, el elemento anterior */
+    width: 50%;
+    height: 75%;
+    background-color: red;
+}
