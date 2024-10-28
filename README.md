@@ -1,6 +1,4 @@
-Aquí tienes un ejemplo de cómo podría quedar tu `README.md` para un repositorio dedicado a aprender CSS:
 
----
 
 # 🖌️ Aprendiendo CSS desde Cero
 
