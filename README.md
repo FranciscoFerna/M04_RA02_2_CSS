@@ -1,5 +1,3 @@
-
-
 # 🖌️ Aprendiendo CSS desde Cero
 
 ¡Bienvenido a mi repositorio de CSS! Este es un espacio dedicado a mi viaje de aprendizaje de CSS (Cascading Style Sheets), donde iré documentando conceptos clave, ejemplos y proyectos pequeños. Si estás comenzando en el mundo de CSS, este repositorio puede ser una referencia útil y sencilla.

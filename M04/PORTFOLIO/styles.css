@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+}
+
+/* TABLAS */
+/* Estilos comunes para tablas */
+.table-experience,
+.table-formacion {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-experience td,
+.table-formacion td {
+    padding: 10px;
+    border-bottom: 1px dashed #64A552;
+    text-align: left;
+}
+
+.table-experience td:first-child,
+.table-formacion td:first-child {
+    font-weight: bold;
+}
+
+.table-experience td a,
+.table-formacion td a {
+    color: green;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.location {
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+}
+
+.city {
+    font-style: italic;
+}
+
+.year,
+.job,
+.location,
+.city {
+    width: 25%;
+}
+
