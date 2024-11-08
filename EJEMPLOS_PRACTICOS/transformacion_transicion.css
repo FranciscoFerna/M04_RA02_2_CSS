@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.transform-box {
+    background-color: #2196f3;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: transform 0.3 ease;
+    display: inline-block;
+}
+
+.transform-box:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
