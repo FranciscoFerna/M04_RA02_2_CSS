@@ -1,8 +1,67 @@
+/* Tipografía global */
 body {
-    font-family: sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
-/* TABLAS */
+/* Header */
+header {
+    width: 100%;
+    height: auto;
+    background-color: #CCCCCC;
+}
+
+header h1 {
+    padding: 5px;
+    font-weight: 500;
+}
+
+/* Nav */
+nav {
+    width: 100%;
+    height: auto;
+    background-color: #808080;
+    color: white;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.personal-info {
+    border: 0.5px dashed grey;
+    border-left: 5px solid #008000;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.personal-info img {
+    width: 150px;
+    height: 180px;
+    padding: 5px;
+    border: 1px dashed #808080;
+    border-radius: 25% 40%;
+}
+
+.personal-info p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.personal-info span {
+    color: green;
+    font-style: italic;
+}
+
+.personal-info li {
+    list-style-type: circle;
+}
+
+/* ----- TABLAS ----- */
 /* Estilos comunes para tablas */
 .table-experience,
 .table-formacion {
@@ -13,15 +72,29 @@ body {
 .table-experience td,
 .table-formacion td {
     padding: 10px;
-    border-bottom: 1px dashed #64A552;
     text-align: left;
 }
 
+/* Bordes en la primera fila de .table-formacion y en todas las filas de .table-experience */
+.table-formacion tr:first-child {
+    border-bottom: 1px dashed #64A552;
+}
+
+.table-experience tr {
+    border-bottom: 1px dashed #64A552;
+}
+
+.table-experience tr:last-child {
+    border: none;
+}
+
+/* Estilo para la primera celda de cada fila en ambas tablas */
 .table-experience td:first-child,
 .table-formacion td:first-child {
     font-weight: bold;
 }
 
+/* Enlaces dentro de las tablas */
 .table-experience td a,
 .table-formacion td a {
     color: green;
@@ -29,15 +102,18 @@ body {
     font-weight: 500;
 }
 
+/* Estilo para ubicaciones en mayúsculas */
 .location {
-    font-family: "Jost", sans-serif;
     text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* Estilo de ciudad en cursiva */
 .city {
     font-style: italic;
 }
 
+/* Tamaño de las columnas comunes: año, trabajo, ubicación y ciudad */
 .year,
 .job,
 .location,
@@ -45,3 +121,71 @@ body {
     width: 25%;
 }
 
+/* ----- SECCIONES ----- */
+/* Estilos para experiencia profesional */
+.profesional_experience {
+    border: 0.5px dashed grey;
+    border-left: 5px solid #008000;
+    border-bottom: 0.5px dashed #008000;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Estilos para la sección de formación */
+.training {
+    border: 0.5px dashed grey;
+    border-left: 5px solid #008000;
+    border-bottom: 0.5px dashed #008000;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Estilos para la sección de competencias tecnológicas */
+.technological_competencies {
+    border: 0.5px dashed grey;
+    border-left: 5px solid #008000;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.technological_competencies label {
+    margin: 0px 0px 0px 50px;
+}
+
+/* ----- CONTROL DESLIZANTE (SLIDER) ----- */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 14rem;
+}
+
+/* Sin contorno al hacer foco en el control deslizante */
+input[type="range"]:focus {
+    outline: none;
+}
+
+/* Pista del control deslizante */
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #d0d0d0; 
+    border-radius: 0rem;
+    height: 1rem;
+}
+
+/* Pulgar del control deslizante */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 0px; 
+    background-color: #008000; 
+    border-radius: 0rem;
+    height: 1rem;
+    width: 5rem;
+}
+
+/* Foco en el pulgar del control deslizante */
+input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #008000;
+    outline-offset: 0.125rem;
+}
