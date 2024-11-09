@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen {
+    margin: 10px;
+}
+
+.izquierda {
+    float: left;
+}
+
+.derecha {
+    float: right;
+}
+
+.texto p {
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
