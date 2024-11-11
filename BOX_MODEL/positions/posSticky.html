@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de position: sticky</title>
+    <style>
+        /*
+        Con position: sticky, el elemento es una combinación de relative y fixed. 
+        Se comporta como relative hasta que se alcanza un desplazamiento específico, 
+        después se comporta como fixed.
+        */
+        body {
+            height: 2000px; /* Para crear una barra de desplazamiento */
+        }
+
+        .elemento {
+            position: sticky; /* Posicionado de manera pegajosa */
+            top: 0; /* Se queda pegado en la parte superior al desplazarse */
+            background-color: lightblue;
+            padding: 20px;
+            margin: 0;
+            border-bottom: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="elemento">Elemento 1 - Sticky</div>
+    <div style="padding: 20px;">Desplázate hacia abajo para ver el efecto sticky.</div>
+    <div style="height: 1500px;">Más contenido aquí...</div>
+</body>
+</html>

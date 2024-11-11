@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid Complejo</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 2fr;
+            grid-template-rows: 100px 200px 50px;
+            gap: 10px;
+            height: 100vh;
+        }
+        .header {
+            grid-area: header;
+            background-color: lightcoral;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightblue;
+        }
+        .content {
+            grid-area: content;
+            background-color: lightgreen;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: lightgray;
+        }
+        .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item header">Encabezado</div>
+        <div class="grid-item sidebar">Barra Lateral</div>
+        <div class="grid-item content">Contenido Principal</div>
+        <div class="grid-item footer">Pie de Página</div>
+    </div>
+
+</body>
+</html>

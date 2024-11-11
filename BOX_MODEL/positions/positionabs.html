@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de position: absolute</title>
+    <style>
+        /*
+        Con position: absolute, el elemento se posiciona en relación al primer 
+        contenedor padre que tenga position distinto de static. Si no hay tal 
+        contenedor, se posiciona en relación al body del documento.
+        */
+        .contenedorP {
+            position: relative; /* Contenedor de referencia */
+            /*width: 300px;
+            height: 200px;*/
+            background-color: rebeccapurple;
+            padding: 20px;
+        }
+        .contenedor {
+            /*position: relative; /* Contenedor de referencia */
+            width: 300px;
+            height: 200px;
+            background-color: lightgray;
+            
+        }
+
+        .elemento {
+            position: absolute; /* Posicionado absolutamente */
+            background-color: lightblue;
+            padding: 20px;
+            top: 10px; /* 10px desde la parte superior del contenedor */
+            left: 10px; /* 10px desde la izquierda del contenedor */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedorP">
+        <div class="contenedor">
+            <div class="elemento">Elemento 1 - Absoluto</div>
+        </div>
+    </div>
+    
+</body>
+</html>

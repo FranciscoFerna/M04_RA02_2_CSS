@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Colapso de Contenedor</title>
+    <style>
+        /* Estilo para el contenedor 
+        En este primer ejemplo, el contenedor no ajusta su altura a los elementos 
+        flotantes que contiene, lo cual hace que parezca "colapsado".
+        
+        
+        */
+       .contenedor {
+            background-color: lightgray;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+        /*.contenedor::after {
+            content: "";
+                        background-color: lightgray;
+            padding: 10px;
+            border: 2px solid #333;
+            display: table;
+            clear: both;
+        }*/
+        /* Estilo para los elementos flotantes */
+        .caja {
+            width: 45%;
+            background-color: lightblue;
+            float: left;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <div class="caja">Caja flotante 1</div>
+        <div class="caja">Caja flotante 2</div>
+    </div>
+
+</body>
+</html>

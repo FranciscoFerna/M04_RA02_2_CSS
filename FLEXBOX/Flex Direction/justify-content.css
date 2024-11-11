@@ -1,0 +1,11 @@
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    height: 150px;
+    border: 2px solid #ccc;
+}
+
+.item {}

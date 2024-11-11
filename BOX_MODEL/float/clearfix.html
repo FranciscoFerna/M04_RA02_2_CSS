@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con Clearfix</title>
+    <style>
+        .contenedor {
+            background-color: lightgray;
+            padding: 10px;
+            overflow: auto; /* Esto es una forma de clearfix */
+        }
+
+        .caja {
+            width: 45%;
+            padding: 20px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+
+        .izquierda {
+            float: left;
+        }
+
+        .derecha {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja izquierda">Esta caja flota a la izquierda.</div>
+        <div class="caja derecha">Esta caja flota a la derecha.</div>
+    </div>
+</body>
+</html>

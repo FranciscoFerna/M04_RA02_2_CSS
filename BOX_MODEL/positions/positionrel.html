@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de position: relative</title>
+    <style>
+        /*
+        Con position: relative, el elemento se posiciona en relación a su posición 
+        original en el flujo del documento. Esto permite mover el elemento sin alterar 
+        el flujo de otros elementos.
+        */
+        .contenedor {
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .otro{
+            background-color: blueviolet;
+        }
+
+        .elemento {
+           position: relative;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 5px;
+            top: 40px; /* Se mueve 20px hacia abajo */
+            left: 30px; /* Se mueve 30px hacia la derecha */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="elemento">Elemento 1 - Relativo</div>
+        <div class="otro">sdf</div>
+    </div>
+</body>
+</html>

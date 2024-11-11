@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaciones con Clear</title>
+    <style>
+        .contenedor {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+
+        .izquierda {
+            float: left;
+            width: 40%;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .derecha {
+            float: right;
+            width: 40%;
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Elemento con `clear: left` */
+        .clear-left {
+            background-color: lightcoral;
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            clear: left; /* Solo evita flotar junto al elemento de la izquierda */
+        }
+
+        /* Elemento con `clear: right` */
+        .clear-right {
+            background-color: lightyellow;
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            clear: right; /* Solo evita flotar junto al elemento de la derecha */
+        }
+
+        /* Elemento con `clear: both` */
+        .clear-both {
+            background-color: lightpink;
+            padding: 20px;
+            margin: 10px;
+            clear: both; /* Evita flotar junto a ambos elementos */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="izquierda">Caja flotante a la izquierda</div>
+        <div class="derecha">Caja flotante a la derecha</div>
+        <div class="clear-left">Este elemento evita solo el flotante de la izquierda.</div>
+        <div class="clear-right">Este elemento evita solo el flotante de la derecha.</div>
+        <div class="clear-both">Este elemento evita ambos flotantes.</div>
+    </div>
+
+</body>
+</html>

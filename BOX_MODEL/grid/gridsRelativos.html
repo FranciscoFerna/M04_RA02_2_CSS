@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Grid con Tamaños Relativos</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr; /* La primera columna es el doble de ancha que las otras dos */
+            gap: 10px;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: lightsteelblue;
+            color: white;
+            padding: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">Elemento 1 (2fr)</div>
+        <div class="grid-item">Elemento 2 (1fr)</div>
+        <div class="grid-item">Elemento 3 (1fr)</div>
+    </div>
+
+</body>
+</html>

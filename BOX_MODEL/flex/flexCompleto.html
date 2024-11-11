@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Completo de Flexbox</title>
+    <style>
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-between;
+            height: 500px;
+            background-color: lightgray;
+            border: 2px solid #333;
+            padding: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            margin: 10px;
+            width: 150px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Crecimiento variable */
+        .item-1 {
+            flex-grow: 1;
+        }
+
+        .item-2 {
+            flex-grow: 2;
+        }
+
+        .item-3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="item item-1">Elemento 1</div>
+        <div class="item item-2">Elemento 2</div>
+        <div class="item item-3">Elemento 3</div>
+    </div>
+
+</body>
+</html>

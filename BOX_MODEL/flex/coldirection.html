@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Flex Direction: Column</title>
+    <style>
+        .contenedor {
+            display: flex;
+            flex-direction: column; /* Alineación vertical de arriba hacia abajo */
+            /*flex-direction: column-reverse; /* Alineación vertical de abajo hacia arriba */
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .item {
+            background-color: lightcoral;
+            padding: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+</body>
+</html>

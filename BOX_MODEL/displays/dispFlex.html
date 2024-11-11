@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de display: flex</title>
+    <style>
+        .contenedor {
+            display: flex; /* Activa el Flexbox */
+            justify-content: space-between; /* Espacio entre elementos */
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .flex-item {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 5px;
+            flex: 1; /* Cada item toma el mismo espacio */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="flex-item">Elemento 1</div>
+        <div class="flex-item">Elemento 2</div>
+        <div class="flex-item">Elemento 3</div>
+    </div>
+</body>
+</html>

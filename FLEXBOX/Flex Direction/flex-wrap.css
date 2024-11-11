@@ -1,0 +1,20 @@
+
+.contenedor{
+    /*flex-wrap: nowrap; /* No se permite que los elementos pasen a otra linea */
+    flex-wrap: wrap; /* Los elementos pasan a nuevas lineas cuando el espacio es insuficiente */
+    /* flex-wrap: wrap-reverse; /* Ajustament de varies linies en ordre invers */
+    gap: 10px;
+    background-color: lightgray;
+    padding: 10px;
+    overflow: auto; /* Afegeis un scroll si els elements surten del contenidor */
+    width: 300px;
+    height: 150px;
+}
+
+.item{
+    background-color: lightblue;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+}

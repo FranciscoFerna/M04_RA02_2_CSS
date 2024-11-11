@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Flex Wrap: No Wrap</title>
+    <style>
+        .contenedor {
+            display: flex;
+            /*flex-wrap: nowrap; /* No se permite que los elementos pasen a otra línea */
+            flex-wrap: wrap; /* Los elementos pasan a nuevas líneas cuando el espacio es insuficiente */
+            /*flex-wrap: wrap-reverse; /* Ajuste en varias líneas en orden inverso */
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+            overflow: auto; /* Añade un scroll si los elementos se salen del contenedor */
+            width: 300px; /* Limitamos el ancho para ver el efecto */
+            /*height: 150px;*/
+        }
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            font-weight: bold;
+            text-align: center;
+            width: 150px; /* Cada elemento tiene un ancho fijo */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="item">Elemento 1</div>
+        <div class="item">Elemento 2</div>
+        <div class="item">Elemento 3</div>
+    </div>
+
+</body>
+</html>

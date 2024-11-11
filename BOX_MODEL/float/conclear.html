@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con Clear aplicado</title>
+    <style>
+        .contenedor {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+
+        /* Elemento flotante a la izquierda */
+        .izquierda {
+            float: left;
+            width: 40%;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Elemento flotante a la derecha */
+        .derecha {
+            float: right;
+            width: 40%;
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* Elemento con `clear: both` */
+        .con-clear {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            clear: both; /* Evita que el elemento se alinee junto a los flotantes */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="izquierda">Caja flotante a la izquierda</div>
+        <div class="derecha">Caja flotante a la derecha</div>
+        <div class="con-clear">Este elemento está debajo de las cajas flotantes, gracias a `clear: both`.</div>
+    </div>
+
+</body>
+</html>

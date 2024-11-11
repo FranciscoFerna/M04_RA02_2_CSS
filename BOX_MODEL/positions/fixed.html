@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de position: fixed</title>
+    <style>
+        /*
+        Con position: fixed, el elemento se posiciona en relación a la ventana 
+        del navegador y se queda en su lugar incluso cuando se desplaza la 
+        página.
+        */
+        body {
+            height: 2000px; /* Para crear una barra de desplazamiento */
+        }
+
+        .elemento {
+            position: fixed; /* Posicionado de manera fija */
+            background-color: lightblue;
+            padding: 20px;
+            top: 10px; /* 10px desde la parte superior de la ventana */
+            right: 10px; /* 10px desde la derecha de la ventana */
+        }
+    </style>
+</head>
+<body>
+    <div class="elemento">Elemento 1 - Fijo</div>
+</body>
+</html>
